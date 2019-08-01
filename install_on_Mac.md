@@ -1,4 +1,4 @@
-# Install python for NEURON on Mac
+# Install NEURON for python on Mac
 
 ## Requirements
 
