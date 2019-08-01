@@ -23,7 +23,7 @@ You should see this output:
 
 3. Anaconda Python
 
-Download the latest installer from the [Anaconda homepage](https://www.anaconda.com/distribution/).
+Download and run the latest installer from the [Anaconda homepage](https://www.anaconda.com/distribution/).
 
 _Important Note:_ It seems that Python must be build with the same C compiler as NEURON. Therefore remove Anaconda and reinstall if XCode is installed later than an existing Anaconda distribution.
 
@@ -66,18 +66,20 @@ make install
 export PATH=$N/nrn/x86_64/bin:$PATH
 ```
 
-_Important Note:_ Without the renaming extracted directory, the Finder cannot find `nrniv` when starting `nrndemo` or `nrngui` from Finder.
+_Important Note:_ Without the renaming the extracted directory, the Finder cannot find `nrniv` when starting `nrndemo` or `nrngui` from Finder.
 
-## Make avaible to Python
+_Note:_ The PYLIB=-lpython PYLIBLINK=-lpython` seems to be necessary for the installation on Mac.
 
-1. Create a clean python environment:
+## Make NEURON available to Python
+
+1. Create a new python environment from scratch:
 
 ```bash
 # conda create --name p27neuron python=2.7
 # conda activate p27neuron 
 ```
 
-_Note:_ The full anaconda python has some packages installed that lead to a problem
+_Important Note:_ The full anaconda python has some packages installed that lead to a problem
 with the version number, and sub-package hoc27 cannot be found.
 
 2. Install additional packages, e.g. Jupyter:
@@ -102,16 +104,16 @@ Search for `neuron` in the list of installed packages:
 conda list
 ```
 
-## Testing
+## Running NEURON from Python
 
-Make sure to activate the conda environment:
+Make sure to activate the appropriate conda environment:
 ```bash
 conda activate p27neuron
 ```
 
 ### NEURON
 
-Start NEURON with the build-in Python as shell:
+Start NEURON with the build-in Python shell:
 
 ```bash
 ./nrniv -python
