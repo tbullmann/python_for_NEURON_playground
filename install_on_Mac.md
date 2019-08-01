@@ -43,7 +43,7 @@ In that sub-directory execute the following commands:
 
 ```bash
 N=`pwd`
-tar xzf iv-19.tar.gz 
+tar xzf iv-19.tar.gz
 mv iv-19 iv
 cd iv
 ./configure --prefix=`pwd`
@@ -57,7 +57,7 @@ _Important Note:_ Renaming the extracted directory makes things easier for the i
 
 ```bash
 cd ..
-tar xzf nrn-7.6.7.tar.gz 
+tar xzf nrn-7.6.7.tar.gz
 mv nrn-7.6 nrn
 cd nrn
 ./configure --prefix=`pwd` --with-iv=$N/iv --with-nrnpython PYLIB=-lpython PYLIBLINK=-lpython
@@ -76,16 +76,17 @@ _Note:_ The PYLIB=-lpython PYLIBLINK=-lpython` seems to be necessary for the ins
 
 ```bash
 # conda create --name p27neuron python=2.7
-# conda activate p27neuron 
+# conda activate p27neuron
 ```
 
 _Important Note:_ The full anaconda python has some packages installed that lead to a problem
 with the version number, and sub-package hoc27 cannot be found.
 
-2. Install additional packages, e.g. Jupyter:
+2. Install additional packages, e.g. Jupyter and Matplotlib:
 
 ```bash
 pip install jupyter
+conda install matplotlib
 ```
 
 3. Install neuron for Python package
@@ -141,5 +142,3 @@ jupyter notebook
 
 Start a new notebook in the browser interface.
 Import of the package using `import neuron` should work.
-
-
