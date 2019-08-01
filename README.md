@@ -1,1 +1,4 @@
-# python_for_NEURON_playground
+# Python for NEURON playground
+
+Tipps for the installation of NEURON for Python [on Mac](install_on_Mac.md).
+
