@@ -136,7 +136,7 @@ Import of the package using `import neuron` should work.
 Start Jupyter:
 
 ```bash
-jupyter notenbook
+jupyter notebook
 ```
 
 Start a new notebook in the browser interface.
