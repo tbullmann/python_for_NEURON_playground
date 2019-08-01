@@ -6,7 +6,7 @@
 
 2. XQuartz
 
-Download and install the most recent XQuartz dmg from http://xquartz.org and
+Download and install the most recent XQuartz dmg from the [XQuartz homepage](http://xquartz.org) and
 run the following from command line:
 
 ```bash
@@ -23,9 +23,10 @@ You should see this output:
 
 3. Anaconda Python
 
-Download the latest installer from https://www.anaconda.com/distribution/
+Download the latest installer from the [Anaconda homepage](https://www.anaconda.com/distribution/).
 
-_Note:_ It seems that Python must be build with the same C compiler as NEURON
+_Important Note:_ It seems that Python must be build with the same C compiler as NEURON. Therefore remove Anaconda and reinstall if XCode is installed later than an existing Anaconda distribution.
+
 
 
 ## Install NEURON  from Source
@@ -65,7 +66,7 @@ make install
 export PATH=$N/nrn/x86_64/bin:$PATH
 ```
 
-_Note:_ Without the extracted directory, the Finder cannot find `nrniv` when executing `nrndemo` or `nrngui`.
+_Important Note:_ Without the renaming extracted directory, the Finder cannot find `nrniv` when starting `nrndemo` or `nrngui` from Finder.
 
 ## Make avaible to Python
 
