@@ -2,7 +2,7 @@
 
 - Tipps for the installation of NEURON for Python [on Mac](install_on_Mac.md).
 
-- Take the first steps described in this [tutorial](https://neuron.yale.edu/neuron/static/docs/neuronpython/firststeps.html).
+- Take the first steps described in this [tutorial](https://neuron.yale.edu/neuron/static/docs/neuronpython/firststeps.html): Start Jupyter and run the simple [tutorial](tutorial.ipynb)
 
 - Be sure to cite the [original publication](https://www.frontiersin.org/articles/10.3389/neuro.11.001.2009/full) by:
 
