@@ -1,6 +1,13 @@
-from neuron import h 
-from nrnutils import Section, Mechanism      
+from neuron import h, load_mechanisms
+from nrnutils import Section, Mechanism 
 from Morphology import AxonWithBoutons
+
+# It is not possible to consistently get the path of a Jupyter notebook. But this may work most of the time.
+# If not, paste the absolute path to the folder containing the mod files (not the compiled files)
+import os
+current_path = os.getcwd()
+load_mechanisms(os.path.join(current_path, "mod"))
+
 
 def without_ih():
     
@@ -38,3 +45,5 @@ def without_ih():
     h.q10h_nax = 4
     
     return model
+
+
