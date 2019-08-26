@@ -82,11 +82,11 @@ _Note:_ The PYLIB=-lpython PYLIBLINK=-lpython` seems to be necessary for the ins
 _Important Note:_ The full anaconda python has some packages installed that lead to a problem
 with the version number, and sub-package hoc27 cannot be found.
 
-2. Install additional packages, e.g. Jupyter and Matplotlib:
+2. Install additional packages, e.g. Jupyter, Matplotlib and SciPy:
 
 ```bash
 pip install jupyter
-conda install matplotlib
+conda install matplotlib scipy
 ```
 
 3. Install neuron for Python package
